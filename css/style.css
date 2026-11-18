@@ -42,3 +42,14 @@ footer nav{display:flex;gap:20px;flex-wrap:wrap}
 .msg{background:var(--gris);border-radius:12px;padding:20px;margin-bottom:26px}
 .msg .resp{margin:14px 0 0 40px;padding-left:14px;border-left:2px solid #999}
 @media(max-width:800px){.hero,.perfil,.carrito,.grid{grid-template-columns:1fr}}
+/* Funcionalidad */
+.buscar{padding:0 18px}.buscar input{width:100%;border:0;background:none;font:inherit;padding:12px 0;outline:0}
+.mini,.tutoria{background-size:cover;background-position:center}
+.hero .img{background:url(../img/hero.png) center/cover,linear-gradient(135deg,#2b63e0,#9fb8f0)}
+.tutoria b,.tutoria small{background:#fffd;padding:2px 6px;border-radius:4px;align-self:flex-start}
+.total label{display:block;font-size:13px;margin:14px 0 6px}
+.total select,.total input,#fm textarea,.caja select{width:100%;padding:12px;border:1px solid #bbb;border-radius:8px;font:inherit;margin-bottom:6px}
+#fm{margin-bottom:26px}#fm button{margin-top:8px}.err{color:#c0262d;text-align:center}
+#toast{position:fixed;bottom:24px;left:50%;transform:translateX(-50%) translateY(80px);background:#111;color:#fff;padding:12px 22px;border-radius:8px;opacity:0;transition:.3s;z-index:9}
+#toast.show{opacity:1;transform:translateX(-50%)}
+.menu form select,.menu form input{padding:10px;margin:4px 0;border:1px solid #bbb;border-radius:8px;font:inherit}
