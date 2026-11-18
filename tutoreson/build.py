@@ -1,0 +1,5 @@
+FOOT='<footer><div><p>Síguenos en YouTube · Facebook · Instagram · X</p><p>© TutoresOn-Line. Todos los derechos reservados.</p></div><nav><a href="#">Privacidad y términos</a><a href="#">Cookies</a><a href="#">CCPA</a></nav><strong>TutoresOn-Line</strong></footer>'
+PAGES={'index':('Inicio','index'),'catalogo':('Catálogo','catalogo'),'login':('Iniciar sesión','login'),'registro':('Registro','registro'),'perfil':('Mi perfil','perfil'),'metodos-pago':('Métodos de pago','pagos'),'carrito':('Carrito','carrito'),'biblioteca':('Mis tutorías','biblioteca'),'comunidad':('Comunidad','comunidad')}
+for f,(t,k) in PAGES.items():
+    open(f+'.html','w',encoding='utf-8').write(f'<!DOCTYPE html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>{t} · TutoresOn-Line</title><link rel="stylesheet" href="css/style.css"></head><body data-page="{k}"><div id="hd"></div><main id="app"></main>{FOOT}<div id="toast"></div><script src="js/app.js"></script></body></html>')
+open('home-sesion.html','w').write('<!DOCTYPE html><meta charset="utf-8"><meta http-equiv="refresh" content="0;url=index.html">')
